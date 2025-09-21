@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Average Finder</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            text-align: center;
+            padding: 40px;
+        }
+        h1 {
+            color: #333;
+        }
+        .input-group {
+            margin: 20px 0;
+        }
+        input[type="number"] {
+            width: 80px;
+            padding: 8px;
+            margin: 0 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #0078d4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Simple Average Finder</h1>
+
+    <div class="input-group">
+        <label>Quiz 1: <input type="number" id="score1" min="0" max="100"></label>
+        <label>Quiz 2: <input type="number" id="score2" min="0" max="100"></label>
+    </div>
+
+    <button id="compute-btn">Compute</button>
+
+    <div id="result"></div>
+
+    <!-- Load external Python file -->
+    <py-script src="main.py"></py-script>
+
+</body>
+</html>
